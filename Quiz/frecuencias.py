@@ -70,9 +70,11 @@ for a in repeticion:
 		o= arreglo_final[0][l]
 		o= (o/total)
 		o=np.log(o)
-		f[l]=o	
-		r[l]=np.log(l)
+		f[l-1]=o	
+		r[l-1]=np.log(l)
 		l=l+1
+print f
+print r
 z=np.polyfit(r,f,1)
 final.write("\nEste libro tiene un k de valor\n")
 
