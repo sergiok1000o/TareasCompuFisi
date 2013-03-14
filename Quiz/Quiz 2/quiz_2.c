@@ -20,9 +20,10 @@ int main (int argc, char **argv)
 
 	for(i=0;i<tamano;i++)
 	{
-		fun = 1/ (sqrt (1 + cos(k)*sin(k)) ) ;
+		fun = 1 + cos(k)*sin(k);
+		fun2 = 1/sqrt (fun)  ;
 		k = a + h;
-		integral = integral + fun * h;
+		integral = integral + fun2 * h;
 	}
  	
         printf(" el resultado de la integral es %f \n",integral);
